@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(232, 229, 226);
+}
+nav{
+    display: flex;
+    height: 6rem;
+    width: 100%;
+    border-bottom: 2px solid rgb(252, 107, 3);
+    align-items: center;
+    justify-content: flex-end;
+    /* background: linear-gradient(to top,rgb(240, 220, 205),rgb(252, 107, 3)); */
+}
+
+nav  img{
+    display: flexbox;
+    justify-content: left;
+    height: 90px;
+    margin-right: 480px;
+    width: 200px;
+}
+nav ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-around;
+    gap: 30px;
+    /* margin-right: 50px; */
+    align-items: center;
+
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 150%;
+}
+.login{
+    /* border: 2px dashed black; */
+    border-radius: 50px;
+    padding:5px 10px;
+    background-color:rgb(255, 142, 62) ;
+}
+nav button{
+    margin: 30px;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.sidebar{
+    display: none;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    height: 480px;
+    width: 150px;
+    /* border: 2px solid rgb(211, 108, 30); */
+    justify-content: center;
+    align-self: flex-end;
+    margin-left: 88%;
+    margin-top: -6rem;
+    z-index: 9;
+}
+.sidebar button{
+    margin: 15px -10px;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+.sidebar ul{
+    list-style: none;
+    display: flex;
+    display: inline-block;
+}
+.sidebar ul li{
+    margin-top: 20px;
+    opacity: 0.8;
+    &:hover{
+        opacity: 1;
+    }
+}
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 150%;
+    color: black;
+    /* margin-left: 20px; */
+}
