@@ -31,10 +31,9 @@ nav ul {
     list-style: none;
     justify-content: space-around;
     gap: 30px;
-    margin-right: 50px;
+    margin-right: 20px;
     align-items: center;
 
-    border: 1px solid black;
 }
 nav ul li{
     transition: 0.3s;
@@ -63,7 +62,7 @@ nav button:first-child{
 .login{
     height: 50%;
     width: 30%;
-    /* margin-left: 30px; */
+    margin-left: -30px;
     border-radius: 50px;
     padding-top:8px;
     font-weight: 500;
