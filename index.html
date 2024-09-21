@@ -91,8 +91,7 @@
             <button>Submit</button>
          </form>
          <a >Forgot password?</a>
-         <p>Don't have any Account? Then 
-         <!-- <a class="create-account" onclick="openProfile('.login')">Create One</a> -->
+         <p>Don't have any Account?
          <a class="create-account" onclick="document.querySelector('.form-popup').style.display='block', document.querySelector('.login-popup').style.display='none'">Create One</a>
         </p>
      </div>
@@ -103,19 +102,19 @@
         <form action="#" method="post" autocomplete="off">
             <label for="name">Username:</label>
             <br>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" required>
             <br>
             <label for="email">Email:</label>
             <br>
 
-            <input type="email" name="email" id="email" >
+            <input type="email" name="email" id="email" required>
             <br>
             <label for="age">Enter DOB:</label>
             <br>
-             <input type="month" min="1980" max="2024">
+             <input type="month" min="1980" max="2024" required>
              <br>
             <label for="skills">Skills:</label>
-            <select name="skills" id="skills">
+            <select name="skills" id="skills" required>
                 <option value="Cricket">Cricket</option>
                 <option value="Football">Football</option>
                 <option value="Hockey">Hockey</option>
@@ -130,10 +129,10 @@
             <input type="radio" name="gender" id="gender">Female
             <br> -->
             <label for="experience">Experience:</label>
-            <input type="number" name="experience" id="experience" min="0" max="100" value="0">
+            <input type="number" name="experience" id="experience" min="0" max="100" value="0" required>
             <br>
             <label for="skills">Interests:</label>
-            <select name="skills" id="skills">
+            <select name="skills" id="skills" required>
                 <option value="Cricket">Cricket</option>
                 <option value="Football">Football</option>
                 <option value="Hockey">Hockey</option>
@@ -145,7 +144,7 @@
             <br>
             <br>
             <label for="password">Password:</label>
-            <input type="password" id="password"><br>
+            <input type="password" id="password" required><br>
             <input type="submit" >
         </form>
      </div>
