@@ -11,7 +11,7 @@
 </head>
 <script>
     function openSidebar(){
-        document.querySelector(".sidebar").style.display='flex';
+        document.querySelector(".sidebar").style.display='block';
     }
     function closeSidebar(){
         document.querySelector(".sidebar").style.display='none';
@@ -28,6 +28,8 @@
     function closeProfile(key){
         if(key=='form'){
             document.querySelector(".form-popup").style.display='none';
+        } else if(key=='login'){
+            document.querySelector(".login-pop").style.display='none';
         }
         else{
             document.querySelector(".info-"+key).style.display='none';
@@ -40,93 +42,157 @@
         </button>
         <ul>    
             <img src="../03-09-2024/scs-logo-1.png" alt="logo"> 
-            <li><a href="#">Home</a></li>
+            <li><a href="#hero-section">Home</a></li>
             <li><a href="#">About </a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#" onclick="openProfile('form')">Register</a></li>
-        </ul>
-    
-            <a class="login" onclick="openProfile('form')">Login</a>
+            <li><a href="#" onclick="openProfile('form')" >Register</a></li>
+            </ul>
+            
+            <a class="login" onclick="document.querySelector('.login-popup').style.display='block'">Login</a>
     </nav>
     <div class="sidebar">
+        <button onclick="closeSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </button>
         <ul>
-            <button onclick="closeSidebar()">
-                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-            </button>
             <li><a href="#">Home</a></li>
+            <li><a href="#">Issues</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Register</a></li>
+           
+            <hr>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Issues</a></li>
             <li><a href="#">Logout</a></li>
         </ul>
+        <input type="search" name="search" id="search" placeholder="Search">
+        <div class="anchor">
+            <p>&copy;Skill Exchange.INC</p>
+            <a href="#">About</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+            <a href="#">Status</a>
+            <a href="#">Blogs</a>
+        </div>
     </div>
-    <div class="form-popup" id="form-popup">
-        <button onclick="closeProfile('form')">
+    <div class="login-popup" id="form-popup">
+        <button onclick="document.querySelector('.login-popup').style.display='none'">
             <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
         </button> 
       <form action="#" class="form-container" method="post" autocomplete="off">
-             <label for="name">Username:</label>
-             <br>
-             <input type="text" id="name" required>
-             <br>
+             
 
              <label for="email">Email:</label>
-             <br>
              <input type="email" name="Email" id="email" required>
-             <br>
-
-             <label for="age">Enter DOB:</label>
-             <br>
-             <input type="month" min="1980" max="2024">
              <label for="password">Password:</label> 
-             <br>
              <input type="password" name="password" id="password" required>
-             <br>
-
-             <input type="submit" value="Submit"  >
-             <input type="reset" value="Reset" >
+            <button>Submit</button>
          </form>
-         <a href="#">Forgot password?</a>
+         <a >Forgot password?</a>
+         <p>Don't have any Account? Then 
+         <!-- <a class="create-account" onclick="openProfile('.login')">Create One</a> -->
+         <a class="create-account" onclick="document.querySelector('.form-popup').style.display='block', document.querySelector('.login-popup').style.display='none'">Create One</a>
+        </p>
      </div>
-    <section class="hero-section">
-        <span class="main">
+     <div class="form-popup">
+        <button onclick="closeProfile('form')">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </button> 
+        <form action="#" method="post" autocomplete="off">
+            <label for="name">Username:</label>
+            <br>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="email">Email:</label>
+            <br>
 
-            <h1 class="hero-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-            <p class="hero-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos facilis, magni rem totam qui maiores distinctio, exercitationem voluptates nisi tempore eligendi nulla illo sit optio nam temporibus culpa, atque et.</p>
-        </span>
-            <div class="item-container">
-                <span class="item item-1">
-              <h1>12</h1>
-              <p>Experience</p>  
-            </span>
-            <span class="item item-2">
-                <h1>1200+</h1>
-                <p>People Connected</p>  
-              </span>
-            <span class="item item-3">
-                <h1>12</h1>
-                <p>Experience</p>  
-            </span>
+            <input type="email" name="email" id="email" >
+            <br>
+            <label for="age">Enter DOB:</label>
+            <br>
+             <input type="month" min="1980" max="2024">
+             <br>
+            <label for="skills">Skills:</label>
+            <select name="skills" id="skills">
+                <option value="Cricket">Cricket</option>
+                <option value="Football">Football</option>
+                <option value="Hockey">Hockey</option>
+                <option value="Guitar">Guitar</option>
+                <option value="Programming">Programming</option>
+                <option value="Esports">Esports</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <br>
+            <!-- <input type="radio" name="gender" id="gender">Male
+            <input type="radio" name="gender" id="gender">Female
+            <br> -->
+            <label for="experience">Experience:</label>
+            <input type="number" name="experience" id="experience" min="0" max="100" value="0">
+            <br>
+            <label for="skills">Interests:</label>
+            <select name="skills" id="skills">
+                <option value="Cricket">Cricket</option>
+                <option value="Football">Football</option>
+                <option value="Hockey">Hockey</option>
+                <option value="Guitar">Guitar</option>
+                <option value="Programming">Programming</option>
+                <option value="Esports">Esports</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password"><br>
+            <input type="submit" >
+        </form>
+     </div>
+    <section class="hero-section" id="hero-section">
+        <div class="main">
+            <h1 class="hero-heading">Lorem ipsum dolor sit amet consectetur adipisicing .</h1>
+            <p class="hero-para">Lorem ma, exercitationem voluptates nisi tempore eligendi nulla illo sit optio nam temporibus culpa, atque et.</p>
+            <button>GET STARTED</button>
+            <a href="#">Blah Blah</a>
         </div>
+            
     </section>
-    <section class="card-container">
-        <div>
-
+    <section class="card-container" id="card-container">
+        <div class="head-des">
+            <h1>Why Choose Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cumque asperiores ab commodi ratione pariatur reiciendis quibusdam amet minima ducimus! Eaque ullam repellat cumque enim illum ipsam, numquam nemo itaque, vel vero consequuntur alias voluptatum? Deleniti asperiores velit aperiam dolores eligendi possimus cum, ex ipsa unde quisquam. Officia, nesciunt repellat.</p>
+        </div>
+        <div class="number-container">
+            <span class="item item-1">
+          <h1>12</h1>
+          <p>Experience</p>  
+        </span>
+        <span class="item item-2">
+            <h1>1200+</h1>
+            <p>People Connected</p>  
+          </span>
+        <span class="item item-3">
+            <h1>12</h1>
+            <p>Experience</p>  
+        </span>
+        </div>
+        <div class="card-stored">
         <span class="card card-1">
             <h3>Card 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia molestiae nobis, consectetur facere quos facilis ducimus explicabo ipsa impedit ipsam </p>
+            <p>Lorem ipsum dolor sit  consectetur facere quos facilis ducimus explicabo ipsa impedit ipsam </p>
         </span>
         <span class="card card-2">
             <h3>Card 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia molestiae nobis, consectetur facere quos facilis ducimus explicabo ipsa impedit ipsam </p>
+            <p>Lorem ipsum dolor sit  consectetur facere quos facilis ducimus explicabo ipsa impedit ipsam </p>
         </span>
         <span class="card card-3">
             <h3>Card 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia molestiae nobis, consectetur facere quos facilis ducimus explicabo ipsa impedit ipsam </p>
+            <p>Lorem ipsum dolor sit  consectetur facere quos facilis ducimus explicabo ipsa impedit ipsam </p>
         </span>
         <span class="card card-4">
             <h3>Card 4</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia molestiae nobis, consectetur facere quos facilis ducimus explicabo ipsa impedit ipsam </p>
+            <p>Lorem ipsum dolor sit  consectetur facere quos facilis ducimus explicabo ipsa impedit ipsam </p>
         </span>
       </div>
     </section>
