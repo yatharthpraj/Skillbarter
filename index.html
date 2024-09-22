@@ -100,12 +100,13 @@
         </p>
      </div>
      <div class="form-popup">
-         <legend>
-             <h1>Register Here</h1>
-         </legend>
         <button onclick="closeProfile('form')">
             <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-        </button> 
+        </button>
+         <!-- <legend>
+             <h1>Register Here</h1>
+         </legend>
+         -->
 
         
         <form action="#" method="post" autocomplete="off" >
@@ -122,6 +123,10 @@
             <label for="age">Enter DOB:</label>
             <br>
              <input type="month" min="1980" max="2024" required>
+             <br>
+             <label for="photo">Choose Profile Image:</label>
+             <br>
+             <input type="file" name="photo" id="photo" accept=".jpg, .jpeg, .png">
              <br>
             <label for="skills">Skills:</label>
             <select name="skills" id="skills" required>
@@ -155,11 +160,10 @@
             <br>
             <label for="password">Password:</label>
             <input type="password" id="password" required><br>
-            <input type="submit" >
+            <input type="submit" value="Create Account">
         </form>
         <p>Already have an Account? </p><a onclick="document.querySelector('.form-popup').style.display='none', document.querySelector('.login-popup').style.display='block'">Login</a>
-     </div>
-    <section class="hero-section" id="hero-section">
+     </div>    <section class="hero-section" id="hero-section">
         <div class="main">
             <h1 class="hero-heading">Find Your Perfect Tutor in Exchange of Your Skill</h1>
             <p class="hero-para">Learn skills in exchange of teaching your skills with people of your age group, without breaking the bank.</p>
