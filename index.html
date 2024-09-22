@@ -84,17 +84,19 @@
             <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
         </button> 
       <form action="#" class="form-container" method="post" autocomplete="off">
-             
+             <center>
+                <h2>Login or Sign up</h2>
+             </center>
 
-             <label for="email">Email:</label>
-             <input type="email" name="Email" id="email" required>
-             <label for="password">Password:</label> 
-             <input type="password" name="password" id="password" required>
-            <button>Submit</button>
+             <!-- <label for="email">Email:</label> -->
+             <input type="email" name="Email" id="email" placeholder="Email*" required>
+             <!-- <label for="password">Password:</label>  -->
+             <input type="password" name="password" id="password" placeholder="Password*" required>
+             <a >Forgot password?</a>
+            <button>Login</button>
          </form>
-         <a >Forgot password?</a>
-         <p>Don't have any Account?
-         <a class="create-account" onclick="document.querySelector('.form-popup').style.display='block', document.querySelector('.login-popup').style.display='none'">Create One</a>
+         <p>New to Website?
+         <a class="create-account" onclick="document.querySelector('.form-popup').style.display='block', document.querySelector('.login-popup').style.display='none'">Create New Account</a>
         </p>
      </div>
      <div class="form-popup">
