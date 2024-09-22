@@ -703,3 +703,77 @@ nav button:first-child{
         }
     }
 }
+.expert-courses{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 90%;
+    height: 60%;
+    margin: 80px 50px ;
+    border: 2px solid black;
+    .images{
+        
+        display: flex;
+        width: 40%;
+        /* border: 2px solid black; */
+        margin-left: -34%;
+        img{
+            display: block;
+            margin: 30px;
+        }
+       
+    }
+    .logo{
+        display: flex;
+        /* border: 2px solid black; */
+        align-items: center;
+        margin-top: 23%;
+        margin-left: 5%;
+        width: 23%;
+        img{
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+        }
+        
+    }
+    .content{
+        display: block;
+        margin-left: 20%;
+        justify-content: end;
+        /* border: 2px solid black; */
+        width: 60%;
+        height: 70%;
+        padding: 20px;
+        h2{
+            display: block;
+            /* text-align: center; */
+            font-size: 180%;
+            margin-bottom: 20px;
+            text-decoration:underline;
+        }
+        p{
+            font-size: 120%;
+            font-weight: 500;
+            margin-bottom: 40px;
+
+        }
+        button{
+            background-color: initial;
+            border: none;
+            box-shadow: 1px 1px 5px black;
+            background-color: rgb(111, 202, 227);
+            margin-left: 60%;
+            width: 30%;
+            height: 15%;
+            font-size: 110%;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            &:active{
+                transform: scale(0.95);
+            }
+        }
+    }
+
+}
