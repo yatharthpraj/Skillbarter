@@ -6,6 +6,9 @@
     /* font-weight: 400; */
     font-style: normal;
 }
+html{
+    scroll-behavior:smooth;
+}
 body{
     /* background-color: rgb(232, 229, 226); */
     height: 100vh;
