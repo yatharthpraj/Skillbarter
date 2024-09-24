@@ -737,11 +737,11 @@ nav button:first-child{
         transform: scale(1);
     }
 }
-.info-4,.info-5,.info-6{
+.info-1,.info-2,.info-3,.info-4{
     margin-top: 20%;
 }
-.info-7,.info-8,.info-9{
-    margin-top: 40%;
+.info-5,.info-6,.info-7,.info-8{
+    margin-top: 155%;
 }
 .how-it-works{
     display: grid;
