@@ -327,10 +327,12 @@ nav button:first-child{
 }
 @keyframes loginDropdown{
     from{
-        transform: translateY(-500px) ;
+        opacity: 0;
+        transform: translateY(-500px) scale(0);
     }
     to{
-        transform: translateX(0%) ;
+        opacity: 1;
+        transform: translateX(0%) scale(1);
         
 
     }
@@ -363,6 +365,7 @@ nav button:first-child{
             text-decoration: none;
             color: blue;
             margin: 10px 5px;
+            font-size: 90%;
         }
     }
     .sidebar-header{
@@ -412,13 +415,25 @@ nav button:first-child{
         cursor: pointer;
         background-color: rgba(216, 216, 216, 0.282);
     }
+    
 }
 .sidebar ul li a{
     text-decoration: none;
     font-size: 120%;
     color: black;
+    width: 100%;
     font-weight: 500;
     /* margin-left: 35px; */
+    select{
+        background-color: inherit;
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        font-size: 100%;
+        font-weight: 500;
+        height: 30px;
+    }
+    
 }
 @keyframes sideBar {
     from{
@@ -774,7 +789,7 @@ nav button:first-child{
     margin: 80px 0px ;
     padding: 0 50px;
     /* border: 2px solid black; */
-    background: url('./circle-scatter-haikei.png');
+    background: url('./blob-scatter-haikei\ \(1\).png');
     background-repeat: no-repeat;
     background-size:cover;
     .images{
