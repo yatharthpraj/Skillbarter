@@ -494,7 +494,7 @@ nav button:first-child{
             }
         }
         a{
-            color: rgb(239, 230, 230);
+            color: rgb(0, 0, 0);
             margin-top: 20px;
             font-size: 100%;
         }
@@ -505,7 +505,7 @@ nav button:first-child{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    margin: 130px 50px;
     /* background-color: beige; */
     height: 100%;
 
@@ -533,12 +533,13 @@ nav button:first-child{
     .number-container{
     /* border: 2px solid black; */
         display: flex;
-        margin: 10px 40px 10px 40px;
+        height: 100px;
+        margin: 5px 40px 10px 40px;
         align-self: flex-start;
 
             .item{
                 width: fit-content;
-                padding: 30px;
+                padding: 15px;
                 border-radius: 5px;
                 h1{
                     /* padding-left: 20%; */
@@ -572,7 +573,11 @@ nav button:first-child{
             transition: 0.3s;
                 
             h3{
+                font-size: 150%;
                 margin: 10px 0px;
+            }
+            p{
+                padding-top: 20px;
             }
         
             &:hover{
@@ -622,7 +627,7 @@ nav button:first-child{
     border-radius: 10px;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px;
+    padding: 30px;
     height: 220px;
     /* margin: 10px 0px; */
     transition: 0.2s;
@@ -638,18 +643,14 @@ nav button:first-child{
 }
 
 .profile h4,.profile h3,.profile p{
-    display: inline;     
-    /* border: 2px solid black; */
-    /* width: fit-content; */
-    /* margin-bottom: 50px ; */
-    /* justify-content: center; */
+    display: inline;    
 }
 
 .profile img{
     display: inline;
-    height: 150px;
-    width: 150px;
-    margin-left: 30%;
+    height: 170px;
+    width: 170px;
+    margin-left: 50%;
     border-radius: 50%;
 }
 .profile button{
@@ -710,7 +711,7 @@ nav button:first-child{
     }
      button:last-child{
         margin-left: 5px;
-        background: linear-gradient(to top,rgb(111, 202, 227),rgb(0, 191, 255));
+        background-color: rgb(111, 202, 227);
         border: none;
         height: 25px;
         width: 100px;
@@ -750,7 +751,7 @@ nav button:first-child{
     margin: 50px;
     height: 100%;
     h1{
-        
+        text-shadow: 0px 3px 5px rgb(112, 112, 112);
         margin: 50px;
         text-align: center;
         font-size: 300%;
