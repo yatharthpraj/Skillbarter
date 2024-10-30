@@ -613,7 +613,7 @@ nav button:first-child{
     }
 }
 .profile-container{
-    display: grid;
+    display: none;
     grid-template-columns: 500px 500px ;
     grid-template-rows: 250px 250px auto auto ;
     justify-content: space-around;
@@ -685,7 +685,7 @@ nav button:first-child{
     }
 }
 .display-content{
-    display:block;
+    display:none;
     justify-content: center;
     z-index: 99;
     align-items: center;
@@ -946,4 +946,681 @@ footer{
         }
     }
   }
+}
+
+@media (min-width: 320px) and (max-width: 425px){
+    nav{
+        height: 4rem;
+        padding: 0 3px;
+        justify-content: center;
+    }
+    nav img{
+        margin-right: 0;
+        width: 130px;
+        padding-left: 5px;
+    }
+    nav ul{
+        gap: 15px;
+        margin-right: 12px;
+    }
+    nav button:first-child{
+        padding: 0;
+    }
+    nav ul li a {
+        font-size: 95%;
+    }
+    .navlinebar{
+        height: 100%;
+        width: 23px;
+    }
+    .other{
+        display: none;
+    }
+    .login-btn{
+        margin-left: 0;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 95%;
+        height: 35%;
+        width: 4rem;
+    }
+    .sidebar{
+        width: 70%;
+        top: 0;
+        margin-top: 0;
+    }
+    .sidebar ul{
+        margin-top: 35%;
+    }
+    .sidebar .sidebar-header img{
+        display: none;
+    } 
+    .sidebar .sidebar-header button{
+        margin: 0;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .sidebar .anchor{
+        display: none;
+    }
+    .hero-section .main .hero-heading{
+        font-size: 190%;
+        width: 90%;
+    }
+    .hero-section .main button{
+        height: 8%;
+        width: 45%;
+        font-size: 80%;
+    }
+    .hero-section .main{
+        padding-top: 40px;
+    }
+    .hero-section .main .hero-para{
+        width: 85%;
+    }
+    .card-container{
+       margin: 500px 50px; 
+    }
+    .card-container .head-des .rightBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-container .head-des{
+        flex-direction: column;
+    } 
+    .card-container .head-des .leftBox{
+        width: 100%;
+    }
+    .card-container .head-des .rightBox img{
+        height: 10rem;
+        width: 10rem;
+        margin-left: 0;
+    } 
+    .card-container .number-container .item h1 {
+        font-size: 150%;    
+    }
+    .card-container .number-container .item p{
+        font-size: 100%;
+    }
+    .card-container .card-stored{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 165px;
+        gap: 30px;
+    }
+    .card-container .card-stored .card h3{
+        font-size: 110%;
+    }
+    .card-container .card-stored .card{
+        height: 100%;
+        width: 80%;
+        border-radius: 20px;
+        padding: 20px 20px;
+    } 
+    .card-container .number-container{
+        align-self: auto;
+    }
+    .how-it-works{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .how-it-works h1{
+        margin-top: 225px;
+    } 
+    .how-it-works .container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .how-it-works .container .item h3{
+        width: 90%;
+    }
+    .how-it-works .container .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .expert-courses{
+        justify-content: center;
+        margin: 100px 0;
+        padding: 0;
+    }
+    .expert-courses .images{
+        margin-bottom: 435px;
+    }
+    .expert-courses .images img{
+        height: 250px;
+        width: 250px;
+        margin-top: 0;
+        margin: 0;
+    }
+    .expert-courses .content{
+        margin-top: 0;
+        margin-left: -111px;
+        width: 100%;
+    }
+    .expert-courses .content button{
+        width: 50%;
+    }
+    footer{
+        width: 100%;
+        margin: 0;
+    }
+    footer .container{
+        margin: 30px;
+        flex-direction: column;
+    }
+    footer .container .section:first-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    footer .container .section{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+    footer .container .section h2{
+        font-size: 15px;
+    }
+    footer img:first-child{
+        width: 140px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    footer .container .section ul li a{
+        font-size: 95%;
+    }
+    .all-socials{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-nav{
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    footer .container .section .social-icons{
+        height: 20px;
+        width: 20px;
+    }
+    footer .container .section pre{
+        font-size: 15px;
+    } 
+    .footerText{
+        margin-top: 100px;
+        font-size: 12px;
+        color: gray;
+        padding-bottom: 15px;
+    }
+    #services{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    nav{
+        height: 4rem;
+        padding: 0 3px;
+        justify-content: center;
+    }
+    nav img{
+        margin-right: 0;
+        width: 130px;
+        padding-left: 5px;
+    }
+    nav ul{
+        gap: 15px;
+        margin-right: 0;
+    }
+    nav button:first-child{
+        padding: 0;
+    }
+    nav ul li a {
+        font-size: 100%;
+    }
+    nav ul li :last-child{
+        margin-right: 0;
+        padding: 6px;
+    } 
+    .navlinebar{
+        height: 100%;
+        width: 23px;
+    }
+    .login-btn{
+        margin-left: 0;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100%;
+        height: 50%;
+        width: 5rem;
+    }
+    .sidebar{
+        width: 60%;
+        top: 0;
+        margin-top: 0;
+    }
+    .sidebar ul{
+        margin-top: 15%;
+    }
+    .sidebar .sidebar-header img{
+        display: none;
+    } 
+    .sidebar .sidebar-header button{
+        margin: 0;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .sidebar .anchor{
+        display: none;
+    }
+    .hero-section .main .hero-heading{
+        font-size: 225%;
+        width: 65%;
+    }
+    .hero-section .main button{
+        height: 8%;
+        width: 30%;
+        font-size: 80%;
+    }
+    .hero-section .main{
+        padding-top: 115px;
+    }
+    .hero-section .main .hero-para{
+        width: 85%;
+    }
+    .card-container{
+       margin: 380px 50px; 
+    }
+    .card-container .head-des .rightBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-container .head-des{
+        flex-direction: column;
+    } 
+    .card-container .head-des .leftBox{
+        width: 100%;
+    }
+    .card-container .head-des .rightBox img{
+        height: 10rem;
+        width: 10rem;
+        margin-left: 0;
+    } 
+    .card-container .number-container .item h1 {
+        font-size: 150%;    
+    }
+    .card-container .number-container .item p{
+        font-size: 100%;
+    }
+    .card-container .card-stored{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 165px;
+        gap: 30px;
+    }
+    .card-container .card-stored .card h3{
+        font-size: 110%;
+    }
+    .card-container .card-stored .card{
+        height: 100%;
+        width: 80%;
+        border-radius: 20px;
+        padding: 20px 20px;
+    } 
+    .card-container .number-container{
+        align-self: auto;
+    }
+    .how-it-works{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .how-it-works h1{
+        margin-top: 225px;
+    } 
+    .how-it-works .container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .how-it-works .container .item h3{
+        width: 90%;
+    }
+    .how-it-works .container .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .expert-courses{
+        justify-content: center;
+        margin: 100px 0;
+        padding: 0;
+    }
+    .expert-courses .images{
+        margin-bottom: 435px;
+    }
+    .expert-courses .images img{
+        height: 250px;
+        width: 250px;
+        margin-top: 0;
+        margin: 0;
+    }
+    .expert-courses .content{
+        margin-top: 0;
+        margin-left: -111px;
+        width: 100%;
+    }
+    .expert-courses .content button{
+        width: 50%;
+    }
+    footer{
+        width: 100%;
+        margin: 0;
+    }
+    footer .container{
+        margin: 30px;
+        flex-direction: column;
+    }
+    footer .container .section:first-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    footer .container .section{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    } 
+    footer .container .section h2{
+        font-size: 15px;
+    }
+    footer img:first-child{
+        width: 140px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    footer .container .section ul li a{
+        font-size: 95%;
+    }
+    .all-socials{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-nav{
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    footer .container .section .social-icons{
+        height: 20px;
+        width: 20px;
+    }
+    footer .container .section pre{
+        font-size: 15px;
+    } 
+    .footerText{
+        margin-top: 100px;
+        font-size: 12px;
+        color: gray;
+        padding-bottom: 15px;
+    }
+    .footer-text{
+        text-align: center;
+    }
+    #services{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px){
+    nav{
+        height: 4rem;
+        padding: 0 3px;
+        justify-content: center;
+    }
+    nav img{
+        margin-right: 0;
+        width: 170px;
+        padding-left: 5px;
+    }
+    nav ul{
+        gap: 20px;
+        margin-right: 0;
+    }
+    nav button:first-child{
+        padding: 0;
+    }
+    nav ul li a {
+        font-size: 120%;
+    }
+    nav ul li :last-child{
+        margin-right: 0;
+        padding: 6px;
+    } 
+    .navlinebar{
+        height: 100%;
+        width: 23px;
+        margin-right: 50px;
+    }
+    .login-btn{
+        margin-left: 0;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 120%;
+        height: 50%;
+        width: 5rem;
+    }
+    .sidebar{
+        width: 60%;
+        top: 0;
+        margin-top: 0;
+    }
+    .sidebar ul{
+        margin-top: 15%;
+    }
+    .sidebar .sidebar-header img{
+        display: none;
+    } 
+    .sidebar .sidebar-header button{
+        margin: 0;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .sidebar .anchor{
+        display: none;
+    }
+    .hero-section .main .hero-heading{
+        font-size: 225%;
+        width: 65%;
+    }
+    .hero-section .main button{
+        height: 8%;
+        width: 30%;
+        font-size: 80%;
+    }
+    .hero-section .main{
+        padding-top: 115px;
+    }
+    .hero-section .main .hero-para{
+        width: 85%;
+    }
+    .card-container{
+       margin: 380px 50px; 
+    }
+    .card-container .head-des .rightBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-container .head-des{
+        flex-direction: column;
+    } 
+    .card-container .head-des .leftBox{
+        width: 100%;
+    }
+    .card-container .head-des .rightBox img{
+        height: 10rem;
+        width: 10rem;
+        margin-left: 0;
+    } 
+    .card-container .number-container .item h1 {
+        font-size: 150%;    
+    }
+    .card-container .number-container .item p{
+        font-size: 100%;
+    }
+    .card-container .card-stored{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 165px;
+        gap: 30px;
+    }
+    .card-container .card-stored .card h3{
+        font-size: 110%;
+    }
+    .card-container .card-stored .card{
+        height: 100%;
+        width: 80%;
+        border-radius: 20px;
+        padding: 20px 20px;
+    } 
+    .card-container .number-container{
+        align-self: auto;
+    }
+    .how-it-works{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .how-it-works h1{
+        margin-top: 225px;
+    } 
+    .how-it-works .container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .how-it-works .container .item h3{
+        width: 90%;
+    }
+    .how-it-works .container .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .expert-courses{
+        justify-content: center;
+        margin: 100px 0;
+        padding: 0;
+    }
+    .expert-courses .images{
+        margin-bottom: 200px;
+        margin-left: 110px;
+    }
+    .expert-courses .images img{
+        height: 250px;
+        width: 250px;
+        margin-top: 0;
+        margin: 0;
+    }
+    .expert-courses .content{
+        margin-top: 0;
+        margin-left: -430px;
+        width: 100%;
+    }
+    .expert-courses .content button{
+        width: 50%;
+    }
+    footer{
+        width: 100%;
+        margin: 0;
+    }
+    footer .container{
+        margin: 30px;
+        flex-direction: column;
+    }
+    footer .container .section:first-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    footer .container .section{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    } 
+    footer .container .section h2{
+        font-size: 15px;
+    }
+    footer img:first-child{
+        width: 140px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    footer .container .section ul li a{
+        font-size: 95%;
+    }
+    .all-socials{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-nav{
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    footer .container .section .social-icons{
+        height: 20px;
+        width: 20px;
+    }
+    footer .container .section pre{
+        font-size: 15px;
+    } 
+    .footerText{
+        margin-top: 100px;
+        font-size: 12px;
+        color: gray;
+        padding-bottom: 15px;
+    }
+    .footer-text{
+        text-align: center;
+    }
+    #services{
+        display: none;
+    }
 }
